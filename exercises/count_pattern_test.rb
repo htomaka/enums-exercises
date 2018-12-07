@@ -35,7 +35,7 @@ class CountPatternTest < Minitest::Test
     words = ["thought", "brake", "shin", "juice", "trash"]
     tally = 0
     words.each do |word|
-      tally += 1 if word.end_with?('ing')
+      tally += 1 if word.end_with? 'ing'
     end
     assert_equal 0, tally
   end
